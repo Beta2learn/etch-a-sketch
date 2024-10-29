@@ -120,3 +120,11 @@ gridButton.addEventListener("click", function(){
 const resetBoard = document.createElement("button");
 resetBoard.classList.add("resetboard");
 menuItems.appendChild(resetBoard);
+
+resetBoard.addEventListener("click", function(){
+    clearContent();
+    currentSize = 16;
+});
+
+// Initialize default size
+grid(currentSize);
