@@ -1,16 +1,8 @@
 const title = document.createElement("h1");
-title.textContent = "etch-a-sketch";
-title.style.cssText = `
-text-align: center`;
+title.textContent = "Etch-a-Sketch";
+title.classList.add("title");
 document.body.appendChild(title);
 
 const container = document.createElement("div");
-container.classList.add("grid-container");
+container.id("container");
 document.body.appendChild(container);
-
-function creategrid(size){
-for(let i = 0; i < size; i++){
-
-    const shell = document.createElement("div");
-}
-}
