@@ -6,7 +6,7 @@ document.body.appendChild(title);
 
 //Container
 const container = document.createElement("div");
-container.id("container");
+container.id = "container";
 document.body.appendChild(container);
 
 //Clear content in the container
