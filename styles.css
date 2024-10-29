@@ -6,10 +6,11 @@ body{
 }
 
 .title{
-    font-size: 3em;
+    font-size: 2em;
     color: white;
     text-align: center;
-    margin: 4%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #container{
@@ -17,9 +18,12 @@ body{
     height: 400px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
-    margin-bottom: 100px;
     box-sizing: border-box;
+    position: relative;
+    top: 80px;
+    bottom: 50px;
+    margin: auto;
+    
     
 }
 
@@ -35,16 +39,16 @@ body{
 }
 
 .menuitems{
-    position: relative;
-    top: 0px;
-    right: 0;
-    bottom: 0;
-    left: 0;
     margin: auto;
-    width: 50% ;
-    height: 10%;
+    position: relative;
+    top: 20px;
+    width: 50%;
     display: flex;
     align-content: center;
     justify-content: space-around;
     
+}
+
+.shapeOne{
+    background-color: red;
 }
