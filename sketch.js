@@ -108,8 +108,12 @@ gridButton.addEventListener("click", function(){
 
     if (squarePerSide && squarePerSide <= 100){
         currentSize = squarePerSide;
-
     //update current size
-    
+    grid(currentSize);
+
+    }else {
+        alert("Please enter a valid number between 1 and 100");
     }
-})
+});
+
+//Reset board button
