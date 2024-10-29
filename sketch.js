@@ -53,6 +53,7 @@ gridShape.addEventListener("change", function(){
     grid(currentSize);
 });
 
+
 //grid
 function grid(size){
     clearContent();
@@ -70,9 +71,28 @@ function grid(size){
         square.style.borderRadius = "50%";
 
     } else if(gridShape.value === "hexagon"){
-        squareSize * 0.577};
+        square.style.width =
+        `${squareSize}px`;
+        square.style.height = `
+         ${squareSize * 0.577};`;
         square.style.clipPath = "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)";
-    {
+    } else {
         square.style.borderRadius = "0";
     }
+
+    square.addEventListener("mouseover", function(){
+        square.style.backgroundColor = randomColor();
+    });
+    container.appendChild(square);
 }
+}
+
+// Generate random rgb colors
+function randomColor(){
+    const randomRed = Math.floor(Math.random() * 256);
+    const randomGreen = Math.floor(Math.random() * 256);
+    const randomBlue = Math.floor(Math.random() * 256);
+    return `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`;
+}
+
+// Grid size option
