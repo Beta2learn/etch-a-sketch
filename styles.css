@@ -18,3 +18,11 @@ body{
     flex-wrap: wrap;
     border: 1px solid white;
 }
+
+.gridshape{
+    margin: 10px;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    background-color: #d3d3d3;
+}
