@@ -24,12 +24,18 @@ gridShape.classList.add("gridshape");
 
 //Shape options
 const shapeOne = document.createElement("option");
+shapeOne.value = "square";
+shapeOne.textContent = "Square";
 shapeOne.classList.add("shapeone");
 
 const shapeTwo = document.createElement("option");
+shapeTwo.value = "circle";
+shapeTwo.textContent = "Circle";
 shapeTwo.classList.add("shapetwo");
 
 const shapeThree = document.createElement("option");
+shapeThree.value = "hexagon";
+shapeThree.textContent = "Hexagon";
 shapeThree.classList.add("shapethree");
 
 menuItems.appendChild(gridShape);
