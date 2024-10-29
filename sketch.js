@@ -45,3 +45,34 @@ gridShape.appendChild(shapeTwo);
 gridShape.appendChild(shapeThree);
 
 document.body.insertBefore(menuItems, container);
+
+//Grid default size
+let currentSize = 16;
+
+gridShape.addEventListener("change", function(){
+    grid(currentSize);
+});
+
+//grid
+function grid(size){
+    clearContent();
+    const squareSize = 400 / size;
+
+    for (let i = 0; i <= size * size; i++){
+        const square = document.createElement("div");
+        square.style.cssText = `
+        width: ${squareSize}px;
+        height: ${squareSize}px;
+        border: 0.3px solid #e4e4e4;`;
+
+        //Shape style based on selection
+    if(gridShape.value === "circle"){
+        square.style.borderRadius = "50%";
+
+    } else if(gridShape.value === "hexagon"){
+        squareSize * 0.577};
+        square.style.clipPath = "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)";
+    {
+        square.style.borderRadius = "0";
+    }
+}
