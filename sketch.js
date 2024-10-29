@@ -17,6 +17,7 @@ function clearContent(){
 }
 
 const menuItems = document.createElement("div");
+menuItems.classList.add("menuitems")
 
 //Drop-down menu for grid shape selection
 const gridShape = document.createElement("select");
@@ -120,6 +121,7 @@ gridButton.addEventListener("click", function(){
 //Reset board button
 const resetBoard = document.createElement("button");
 resetBoard.classList.add("resetboard");
+resetBoard.textContent = "Reset Board"
 menuItems.appendChild(resetBoard);
 
 resetBoard.addEventListener("click", function(){
