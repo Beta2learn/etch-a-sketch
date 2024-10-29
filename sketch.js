@@ -59,12 +59,13 @@ function grid(size){
     clearContent();
     const squareSize = 400 / size;
 
-    for (let i = 0; i <= size * size; i++){
+    for (let i = 0; i < size * size; i++){
         const square = document.createElement("div");
         square.style.cssText = `
         width: ${squareSize}px;
         height: ${squareSize}px;
-        border: 0.3px solid #e4e4e4;`;
+        box-sizing: border-box;
+        border: 0.5px solid #e4e4e4;`;
 
         //Shape style based on selection
     if(gridShape.value === "circle"){
@@ -124,6 +125,8 @@ menuItems.appendChild(resetBoard);
 resetBoard.addEventListener("click", function(){
     clearContent();
     currentSize = 16;
+
+    grid(currentSize);
 });
 
 // Initialize default size

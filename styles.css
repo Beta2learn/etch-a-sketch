@@ -16,7 +16,10 @@ body{
     height: 400px;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid white;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    
 }
 
 .gridshape{
