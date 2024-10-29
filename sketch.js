@@ -117,3 +117,6 @@ gridButton.addEventListener("click", function(){
 });
 
 //Reset board button
+const resetBoard = document.createElement("button");
+resetBoard.classList.add("resetboard");
+menuItems.appendChild(resetBoard);
