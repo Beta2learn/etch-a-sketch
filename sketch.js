@@ -95,4 +95,21 @@ function randomColor(){
     return `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`;
 }
 
-// Grid size option
+// Grid size option button
+const gridButton = document.createElement("button");
+gridButton.textContent = "Grid Size";
+gridButton.classList.add("gridbutton");
+menuItems.appendChild(gridButton);
+
+gridButton.addEventListener("click", function(){
+    let squarePerSide = prompt("Enter the number of squared per side for new grid");
+
+    squarePerSide = parseInt(squarePerSide);
+
+    if (squarePerSide && squarePerSide <= 100){
+        currentSize = squarePerSide;
+
+    //update current size
+    
+    }
+})
